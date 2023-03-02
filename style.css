@@ -1,0 +1,136 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #2e3542;
+    color: #EEE;
+}
+
+header{
+    padding: 30px 15px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #6B7280;
+    margin-bottom: 15px;
+} 
+
+#newTask{
+    display: flex;
+}
+
+input,button{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#addTask{
+    flex: 1 1 0%;
+    background-color: #1F2937;
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 15px;
+    color: #EEE;
+    font-size:20px;
+}
+
+#addTask::placeholder{
+    color: #6B7280;
+}
+
+#submit{
+    color: #EC4899;
+    font-size: 20px;
+    font-weight: 600;
+    background: none;
+    cursor: pointer;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 30px 15px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.taskList{
+    padding: 15px;
+}
+
+.taskList h2{
+    font-size: 20px;
+    font-weight: 300;
+    color: #6B7280;
+    margin-bottom: 15px;
+    margin-left: -5px;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4C0027;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#tasks .task .content{
+    flex: 1 1 0%;
+}
+
+#tasks .task .content .text{
+    color: #EEE;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    
+
+}
+
+
+#tasks .task .content .text :not(:read-only){
+    color: #EC4899;
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -8px;
+
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.task .actions button:hover{
+    opacity: 0.5;
+}
+
+.task .actions .edit{
+    color: #EC4899;
+}
+
+.task .actions .delete{
+    color: rgb(160, 22, 22);
+}
